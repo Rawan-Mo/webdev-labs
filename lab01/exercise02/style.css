@@ -8,13 +8,32 @@ body {
 
 main{
     display: flex;
+    justify-content: center;
 }
 
-/*
-Add some style blocks below this line to style the cards.
-Feel free to borrow from Exercise 1.
-*/
+img{
+    width: 100%;
+}
 
+iframe{
+    width: 100%;}
+
+section{
+    width: 350px;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+section h2, section p, section button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section h2{
+    font-family: 'Lato', sans-serif;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
@@ -22,17 +41,16 @@ Feel free to borrow from Exercise 1.
     main{
         flex-wrap: wrap;
     }
-
-    section{
-        width: calc(100% / 3);
-    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
     
-        main{
-            flex-wrap: wrap;
-        }
-    
+    main{
+        flex-wrap: column;
+    }
+
+    section{
+        width: 100%;
+    }  
 }
